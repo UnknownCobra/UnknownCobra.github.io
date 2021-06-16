@@ -1926,7 +1926,19 @@ input, select, textarea {
 		display: flex;
 		position: relative;
 		margin: 0;
+		background-color: #39454b;
 		overflow-x: hidden;
+		overflow: hidden;
+	}
+	.video-bg {
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		min-width: 200%;
+		min-height: 100%;
+		transform: translate(-50%,-50%);
+		opacity: 0.7;
 	}
 
 		.main > .content {
@@ -1941,6 +1953,7 @@ input, select, textarea {
 
 		.main.fullscreen {
 			min-height: 100%;
+			min-width: 100%;
 		}
 
 		.main.style1 {
@@ -1975,7 +1988,7 @@ input, select, textarea {
 			}
 
 			.main.style1.inactive > .content {
-				opacity: 0;
+				opacity: 0.7;
 			}
 
 		.main.style2 {
@@ -2242,15 +2255,16 @@ input, select, textarea {
 		}
 
 /* Intro */
-
+/*
 	#intro {
+		
 		background: url("images/overlay.png"), url("../../images/intro.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
-
+*/
 /* One */
 
 	#one {
