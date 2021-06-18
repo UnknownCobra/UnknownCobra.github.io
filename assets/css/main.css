@@ -1926,7 +1926,7 @@ input, select, textarea {
 		display: flex;
 		position: relative;
 		margin: 0;
-		background-color: #39454b;
+		/*background-color: #39454b; */
 		overflow-x: hidden;
 		overflow: hidden;
 	}
